@@ -1,0 +1,86 @@
+.main {
+  display: grid;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 300px 550px 100px;
+  grid-template-areas:
+    "left left left right right right"
+    "header header header header header header"
+    "body body body body body body"
+    "footer footer footer footer footer footer"
+
+}
+
+.left {
+  grid-area: left;
+  color: white;
+  background-color: black;
+  text-align: left;
+  padding-left: 10px;
+  padding-left: 30px;
+}
+
+.right {
+  grid-area: right;
+  color: white;
+  background-color: black;
+  text-align: right;
+  padding-right: 30px;
+}
+
+  nav {
+    color: white;
+    padding-top: 30px;
+  }
+
+  Nav a{
+       color: #f2f2f2;
+       text-decoration:none;
+       padding: 10px;
+  }
+
+  Nav a:hover {
+      color: blue;
+      text-decoration: underline;
+  }
+
+  .header {
+    grid-area: header;
+    background-color: black;
+    background: url(images/prohead.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 80px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+    padding-top: 30px;
+    text-shadow: black 2px 5px;
+  }
+
+  .body {
+    grid-area: body;
+    background-color: red;
+    background: url(images/projback.jpg)
+  }
+
+  .footer {
+    grid-area: footer;
+    background-size:contain;
+    background-repeat: repeat;
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    text-align:center;
+  }
